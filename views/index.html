@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="TimeStamp MicroService">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Timestamp Microservice
+      </h1>
+    </header>
+
+    <main>
+      <p class="bold">Welcome to <a href="#" target="_blank">jwang1013</a>'s Timestamp Microservice.</p>
+      <p>Using the microservice URL ( <code>https://jwang1013-timestamp.glitch.me/</code> ), add date parameters in either Unix or Natural Language formats and the service will return both the Unix and Natural Language dates in JSON format.</p>
+      <p>
+        <code>https://jwang1013-timestamp.glitch.me/[Your Time Here]</code>
+      </p>
+      <div class="box">
+        <p>
+          Example:
+        </p>
+        <p><strong>
+          <a href="https://jwang1013-timestamp.glitch.me/November%2030,%201987">https://jwang1013-timestamp.glitch.me/November%2030,%201987</a> or,<br />
+          <a href="https://jwang1013-timestamp.glitch.me/565228800">https://jwang1013-timestamp.glitch.me/565228800</a>
+        </strong></p>
+        <p>
+          Should result in:
+        </p>
+        <p><strong>
+          { "unix": 565228800, "natural": "November 30, 1987" }
+        </strong></p>
+      </div>
+    </main>
+
+    <footer>
+      <a href="#">
+        Check me out on LinkedIn
+      </a>
+    </footer>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>

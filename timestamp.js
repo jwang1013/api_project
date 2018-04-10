@@ -4,12 +4,18 @@ var bodyParser = require('body-parser');
 var cors = require('cors');
 
 // Creat an instance of express for our app and instantiate bodyParser and cors
-var app = module.exports = express();
+var app = express();
 app.use(bodyParser.json());
 app.use(cors());
+app.use(express.static('public'));
+
+// Open your main page
+app.get('/', function (req, res) {
+  res.sendFile(__dirname + '/views/index.html');
+});
 
 //GET call to return JSON that formats natural and unix date
-app.get('/dateValues/:dateVal', function(req, res, next){
+app.get('/:dateVal', function(req, res){
 //Gets the request data for date
     var dateVal = req.params.dateVal;
 // option for formatting date in natural date view
@@ -35,4 +41,7 @@ app.get('/dateValues/:dateVal', function(req, res, next){
     });
 });
 
-app.listen(3000);
+var listener = app.listen(process.env.PORT, function(err, res) {
+  if(err) throw err;
+  console.log("Listening on Port: " + listener.address().port);
+});
