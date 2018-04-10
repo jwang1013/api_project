@@ -10,7 +10,7 @@ app.use(cors());
 
 app.get('/dateValues', function(req, res, next){
 //GET call to return JSON that formats natural and unix date
-    console.log('URL works');
+    
 });
 
 
