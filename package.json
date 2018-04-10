@@ -1,8 +1,8 @@
 {
-  "name": "timestamp.js",
+  "name": "api_project",
   "version": "1.0.0",
   "description": "hi hia hi",
-  "main": "index.js",
+  "main": "timestamp.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,6 +19,8 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
-    "express": "^4.16.3"
-  }
+    "express": "^4.16.3",
+    "nodemon": "^1.17.3"
+  },
+  "devDependencies": {}
 }
